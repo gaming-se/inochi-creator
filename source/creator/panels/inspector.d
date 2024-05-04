@@ -1248,9 +1248,9 @@ void incInspectorModelSimplePhysics(SimplePhysics node) {
 
             if (igSelectable(__("XY"), node.mapMode == ParamMapMode.XY)) node.mapMode = ParamMapMode.XY;
 
-            if (igSelectable(__("LengthAngle"), node.mapMode == ParamMapMode.LengthAngle)) node.mapMode = ParamMapMode.LengthAngle;
+            //if (igSelectable(__("LengthAngle"), node.mapMode == ParamMapMode.LengthAngle)) node.mapMode = ParamMapMode.LengthAngle;
 
-            if (igSelectable(__("YX"), node.mapMode == ParamMapMode.YX)) node.mapMode = ParamMapMode.YX;
+            //if (igSelectable(__("YX"), node.mapMode == ParamMapMode.YX)) node.mapMode = ParamMapMode.YX;
 
             igEndCombo();
         }
