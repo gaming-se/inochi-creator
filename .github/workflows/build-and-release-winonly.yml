@@ -3,14 +3,18 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 name: Build & Release winonly
-
-on:
-  push:
-    # Push all normally versioned tags
-    # Ignore release candidates!
-    tags:
-      - '*'
-      - '!*-rc*'
+on: 
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
 
 permissions:
   contents: write
